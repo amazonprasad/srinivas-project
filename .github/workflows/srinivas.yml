@@ -24,6 +24,6 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: tomcat deploy 
-      run: curl -v -u admin:Admin -T /home/runner/work/srinivas-project/srinivas-project/target/myweb-8.2.0.war 'http://ec2-15-207-100-180.ap-south-1.compute.amazonaws.com:8080//myweb-8.2.0/'
+      run: curl -v -u admin:Admin -T /home/runner/work/srinivas-project/srinivas-project/target/myweb-8.2.0.war 'http://ec2-15-207-100-180.ap-south-1.compute.amazonaws.com:8080//manager/text/deploy?path=/springaction'
 
    
